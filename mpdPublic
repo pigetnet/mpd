@@ -1,0 +1,7 @@
+#!/bin/bash
+replaceLine "/etc/mpd.conf" "read,add,control,admin" "#password                \"admin@read,add,control,admin\"" ""
+console
+cat /etc/mpd.conf
+console
+restarter mpd
+
