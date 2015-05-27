@@ -3,7 +3,7 @@ description "Install mpd music player"
 installer mpd mpc
 description "Musics are saved inside /opt/user/musics"
 mkdir /opt/user/musics
-mkdir /opt/user/musics/playlist
+mkdir /opt/user/musics/playlists
 chown -R mpd:audio /opt/user/musics
 downloadFile "mpdConf" "defaultPiGet" /etc/mpd.conf
 restarter mpd
