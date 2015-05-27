@@ -1,6 +1,7 @@
 #!/bin/bash
 description "Install mpd music player"
-installer mpd mpc
+installer mpd
+installer mpc
 description "Musics are saved inside /opt/user/musics"
 mkdir /opt/user/musics
 mkdir /opt/user/musics/playlists
