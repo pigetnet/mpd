@@ -1,0 +1,5 @@
+#!/bin/bash
+/show/listecho "Setup samba to share musics (/opt/user/musics)"
+/system/downloadModule samba
+/do/samba/install
+/do/samba/download mpd

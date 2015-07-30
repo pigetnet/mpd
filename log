@@ -1,0 +1,3 @@
+#!/bin/bash
+/show/description "MPD music player log"
+tail -f /var/log/mpd/mpd.log
