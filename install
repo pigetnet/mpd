@@ -6,5 +6,5 @@
 /system/makedir /opt/user/musics
 /system/makedir /opt/user/musics/playlists
 chown -R mpd:audio /opt/user/musics
-/system/downloadFile "mpdConf" "defaultPiGet" /etc/mpd.conf
+/system/downloadGithubFile "mpdConf" "defaultPiGet" /etc/mpd.conf
 /system/restart mpd
