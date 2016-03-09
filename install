@@ -2,9 +2,9 @@
 /show/description "Install mpd music player"
 /system/install mpd
 /system/install mpc
-/show/listecho "Musics -> /opt/user/musics" $OK
+/show/listecho "Musics -> /user/musics" $OK
 /system/makedir /opt/user/musics
 /system/makedir /opt/user/musics/playlists
 chown -R mpd:audio /opt/user/musics
-/system/downloadGithubFile "mpdConf" "defaultPiGet" /etc/mpd.conf
+cp /do/mpd/conf/default /etc/mpd.conf
 /system/restart mpd

@@ -1,5 +1,6 @@
 #!/bin/bash
-/show/listecho "Setup samba to share musics (/opt/user/musics)"
-/system/downloadModule samba
-/do/samba/install
-/do/samba/download mpd
+/show/listecho "[SAMBA] Share (/user/musics)"
+if [ ! -e /do/samba ];then
+	/pi/install samba
+fi
+/do/samba/copy /do/mpd/conf/smb.conf

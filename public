@@ -1,5 +1,5 @@
 #!/bin/bash
 /show/listecho "Remove password" $ERR
 /string/replaceLine "/etc/mpd.conf" "read,add,control,admin" "#password                \"admin@read,add,control,admin\"" ""
-/show/file /etc/mpd.conf
+# /show/file /etc/mpd.conf
 /system/restart mpd
